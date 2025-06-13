@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
       redirectPath = '/app/users';
     }
 
-    // history.push(redirectPath);
+    history.push(redirectPath);
 
   } catch (err) {
     console.error('Login error:', err);
