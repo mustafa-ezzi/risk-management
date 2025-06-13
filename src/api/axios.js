@@ -7,7 +7,7 @@ let BASE_URL = "https://rms-v2.duckdns.org/api";
 
 if (process.env.NODE_ENV === "production") {
   console.log("Running in Production Mode");
-  BASE_URL = "http://35.172.211.35/api";
+  BASE_URL = "https://rms-v2.duckdns.org/api";
 } else {
   // BASE_URL = "http://localhost:8000/api/v1";
   console.log("Running in Development Mode");
