@@ -223,7 +223,7 @@ function Request() {
                 </button>
                 <button
                   onClick={handleAddRequest}
-                  className="px-4 py-2 flex items-center bg-purple-600 text-white rounded-lg"
+                  className="px-4 py-2 flex mt-2 items-center bg-purple-600 text-white rounded-lg"
                 >
                   Add Request
                 </button>
