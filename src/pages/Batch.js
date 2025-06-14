@@ -41,6 +41,7 @@ function Batch() {
         className="text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 p-1 rounded"
         title="Delete (TODO)"
       >
+        <AiOutlineDelete className="h-5 w-5" />
       </button>
 
       <button
@@ -218,9 +219,8 @@ function Batch() {
                             size="icon"
                             aria-label="Mark as Todo"
                             onClick={() => handleUpdateBatchStatus(item.id, 'todo')}
-                            className="px-2 py-1 text-xs bg-red-100 text-red-700 rounded-full hover:bg-red-200 dark:bg-red-900 dark:text-red-300 dark:hover:bg-red-800"
+                            className="px-2 py-1 text-xs bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800"
                           >
-                            <AiOutlineDelete className="w-5 h-5" aria-hidden="true" />
                              TODO
                           </Button>
 
