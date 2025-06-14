@@ -38,21 +38,20 @@ function Batch() {
           e.stopPropagation();
           handleUpdateBatchStatus(batchId, 'todo');
         }}
-        className="text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 p-1 rounded"
+        className="bg-blue-100 mb-2 text-blue-700 rounded-full ml-2 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800 px-2 py-1 text-xs "
         title="Delete (TODO)"
       >
-        <AiOutlineDelete className="h-5 w-5" />
-      </button>
+Todo      </button>
 
       <button
         onClick={(e) => {
           e.stopPropagation();
           handleUpdateBatchStatus(batchId, 'completed');
         }}
-        className="text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/30 p-1 rounded"
+        className="bg-green-100 mb-2 text-green-700 rounded-full ml-2 hover:bg-green-200 dark:bg-green-900 dark:text-green-300 dark:hover:bg-green-800 px-2 py-1 text-xs "
         title="Mark Completed"
       >
-        ✅
+        Completed
       </button>
 
       <button
@@ -60,10 +59,10 @@ function Batch() {
           e.stopPropagation();
           handleUpdateBatchStatus(batchId, 'duplicate');
         }}
-        className="text-yellow-600 dark:text-yellow-400 hover:bg-yellow-50 dark:hover:bg-yellow-900/30 p-1 rounded"
+        className="bg-yellow-100 mb-2 text-yellow-700 rounded-full  hover:bg-yellow-200 dark:bg-yellow-900 dark:text-yellow-300 dark:hover:bg-yellow-800 px-2 py-1 text-xs ml-2"
         title="Mark Duplicate"
       >
-        📄
+        Duplicate
       </button>
     </>
   );
@@ -283,10 +282,10 @@ function Batch() {
                           <span className="truncate">Request IDs: {item.request_ids}</span>
                         </div>
                       </div>
+                    </div>
                       <div className="flex justify-center">
                         <BatchActionButtons batchId={item.id} />
                       </div>
-                    </div>
                   </div>
                 ))
               )}
