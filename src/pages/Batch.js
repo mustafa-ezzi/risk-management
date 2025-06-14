@@ -38,10 +38,9 @@ function Batch() {
           e.stopPropagation();
           handleUpdateBatchStatus(batchId, 'todo');
         }}
-        className="text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 p-1 rounded"
+        className="text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 p-1 rounded"
         title="Delete (TODO)"
       >
-        <AiOutlineDelete className="h-5 w-5" />
       </button>
 
       <button
@@ -170,7 +169,7 @@ function Batch() {
       <div className="relative z-10">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
-          <PageTitle>Batchs </PageTitle>
+          <PageTitle>Batches </PageTitle>
         </div>
         {/* Loading State */}
         {isLoading ? (
