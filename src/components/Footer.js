@@ -19,22 +19,7 @@ const Footer = () => {
 
         }}
             className=''>
-            © {currentYear} Designed and Developed By{' '}
-            <a
-                href="https://5cube.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                    fontWeight: 700,
-                    color: '#A855F7',
-                    textDecoration: 'none',
-                    cursor: 'pointer'
-                }}
-                onMouseOver={(e) => e.target.style.color = '#9333EA'}
-                onMouseOut={(e) => e.target.style.color = '#A855F7'}
-            >
-                5Cube
-            </a>
+            © {currentYear} 
         </footer>
     );
 };

@@ -213,37 +213,36 @@ function Request() {
           <div className="flex space-x-2">
             {!isBatchMode ? (
               <>
-              <div className='hidden md:block'>
-                <button
-                  onClick={handleSwitchToBatchMode}
-                  className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700"
-                >
-
-                  Create Batch
-                </button>
-                <button
-                  onClick={handleAddRequest}
-                  className="px-4 py-2 flex mt-2 items-center bg-purple-600 text-white rounded-lg"
-                >
-                  Add Request
-                </button>
-
+                <div className="hidden md:flex space-x-2">
+                  <button
+                    onClick={handleSwitchToBatchMode}
+                    className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700"
+                  >
+                    Create Batch
+                  </button>
+                  <button
+                    onClick={handleAddRequest}
+                    className="px-4 py-2 flex items-center bg-purple-600 text-white rounded-lg"
+                  >
+                    Add Request
+                  </button>
                 </div>
 
                 <div className='md:hidden'>
-                <button
-                  onClick={handleSwitchToBatchMode}
-                  className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700"
-                >
+                  <button
+                    onClick={handleSwitchToBatchMode}
+                    className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700"
+                  >
 
-                  Batch
-                </button>
-                <button
-                  onClick={handleAddRequest}
-                  className="px-4 py-2 mt-2 flex items-center bg-purple-600 text-white rounded-lg"
-                >
-                  Request
-                </button>
+                    Batch
+                  </button>
+                  <button
+                    onClick={handleAddRequest}
+                    className="px-4 py-2 mt-2 flex items-center bg-purple-600 text-white rounded-lg"
+                  >
+                    Request
+                  </button>
+
 
                 </div>
               </>
@@ -473,7 +472,7 @@ function Request() {
 
             {/* Mobile View - List with Request Cards */}
             {/* Mobile View - Grouped Cards */}
-            <div className="md:hidden space-y-3" style={{opacity: 0.8,}}>
+            <div className="md:hidden space-y-3" style={{ opacity: 0.8, }}>
               {requestData.length === 0 ? (
                 <div className="text-center py-8 text-gray-500 dark:text-gray-400">
                   No requests found
